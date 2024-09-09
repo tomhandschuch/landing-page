@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Be Vietnam Pro";
+}
+
+body {
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+}
+
+a:link {
+    gap: 1rem;
+    color: black;
+}
+
+.main-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-article img {
+    width: 50vw;
+    height: 50rem;
+    object-fit: cover;
+}
+
+header > div > img {
+    width: 50px;
+    height: auto;
+}
+
+.header-div {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-over-picture {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-30%, 20%);
+}
+
+.text {
+    text-align: center;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: .6rem;
+}
+
+svg {
+    width: 2rem;
+    height: auto;
+    position: absolute;
+    left: 49%;
+    top: 50rem;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+footer img {
+    filter: invert(100%);
+}
