@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: "Be Vietnam Pro";
+  font-family: Be Vietnam Pro;
 }
 
 body {
@@ -21,20 +21,17 @@ header {
     align-items: center;
 }
 
-a:link {
-    gap: 1rem;
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+header a {
     color: black;
-}
-
-.main-article {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.main-article img {
-    width: 50vw;
-    height: 50rem;
-    object-fit: cover;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 1px;
+    text-decoration-color: gray;
+    transition: text-decoration-color 200ms, text-underline-offset 200ms;
 }
 
 header > div > img {
@@ -48,13 +45,29 @@ header > div > img {
 }
 
 .header-over-picture {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-30%, 20%);
+    top: 30rem;
+    transform: translate(-50%, -50%);
 }
+
+main {
+    font-family: none;
+}
+
+.main-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-article img {
+    width: 50vw;
+    height: 50rem;
+    object-fit: cover;
+}
+
 
 .text {
     text-align: center;
@@ -75,16 +88,34 @@ svg {
     width: 2rem;
     height: auto;
     position: absolute;
-    left: 49%;
-    top: 50rem;
+    left: 50%;
+    top: 54rem;
+    transform: translate(-50%, -50%);
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     color: white;
     background-color: black;
     text-align: center;
+    height: 13rem;
+   place-items: center;
+   padding: 3rem;
 }
+
 
 footer img {
     filter: invert(100%);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link {
+    display: flex;
+    gap: 1rem;
 }
